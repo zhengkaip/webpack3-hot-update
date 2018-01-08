@@ -1,4 +1,4 @@
-import {printMe} from './componentJs/print.js';
+import * as cao from './componentJs/print.js';
 
 import "../css/index.css";
 
@@ -9,7 +9,7 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
   btn.innerHTML = 'Click me and check the console!!!!';
-  btn.onclick = printMe;
+  btn.onclick = cao.cube;
 
   element.appendChild(btn);
 
@@ -18,7 +18,9 @@ function component() {
 document.body.appendChild(component());
 
 let a=10
+var sym = Symbol();
 
+// var promise = new Promise();
 $(function(){
 	alert(a)
 	let json={}
