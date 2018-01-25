@@ -1,4 +1,4 @@
-## webpack热更新
+## webpack多页面应用
    1. 现将整个项目down下来  
     
    2. cmd到你当前项目目录下
