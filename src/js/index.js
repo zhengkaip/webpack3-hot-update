@@ -17,16 +17,15 @@ function component() {
 }
 document.body.appendChild(component());
 
-let a=10
+let a = 10;
 var sym = Symbol();
 
-// var promise = new Promise();
-$(function(){
-	alert(a)
-	let json={}
-	Object.assign(json,{a:1});
-	console.log(json)
-})
+$(function() {
+  let json = {};
+  Object.assign(json, {
+    a: 1
+  });
+});
 if (module.hot) {
-   module.hot.accept()
+  module.hot.accept();
 }
